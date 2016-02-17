@@ -1,0 +1,10 @@
+function divide_assign()
+    local a = 6
+    local b = 10
+    local c = 100
+    local d = 2
+    local e = 5
+    local f = 25
+    a, b, c /= d, e, f
+    return abs(3 - a) + abs(b - 2) + abs(4 - c)
+end

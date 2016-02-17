@@ -1,0 +1,1 @@
+function _arccos(a) return arccos(a) end

@@ -1,0 +1,3 @@
+function _frac(a, b)
+    return sumsqr(frac(a) - b)
+end

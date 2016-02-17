@@ -1,0 +1,10 @@
+function times_assign()
+    local a = 2
+    local b = -3
+    local c = 0
+    local d = 10
+    local e = -1
+    local f = 3
+    a, b, c *= d, e, f
+    return abs(20 - a) + abs(3 - b) + abs(0 - c)
+end

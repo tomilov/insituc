@@ -1,0 +1,9 @@
+function brackets1()
+    local a = 1
+    local b = 2
+    begin
+        local b = 3
+        a = b
+    end
+    return a
+end

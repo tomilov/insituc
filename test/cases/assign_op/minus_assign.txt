@@ -1,0 +1,5 @@
+function minus_assign(x, y)
+    local t = x
+    t -= y
+    return t
+end

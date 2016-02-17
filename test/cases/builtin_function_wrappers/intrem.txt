@@ -1,0 +1,9 @@
+function intrem_pack0()
+    return pi, exp(1)
+end
+
+function intrem_(divisible, divisor, integral_part, fractional_part)
+    local i, f = intrem(divisible, divisor)
+    local a, b = intrem(intrem_pack0())
+    return sumsqr(i - integral_part, f - fractional_part, a - exp(1), b - (pi - exp(1)))
+end

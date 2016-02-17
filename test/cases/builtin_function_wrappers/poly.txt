@@ -1,0 +1,16 @@
+function poly_test0()
+    return poly(zero, l2t, lg2, ln2) - l2t
+end
+function poly_test1()
+    return poly(one, l2t, lg2, ln2) - l2t - lg2 - ln2
+end
+function poly_test2()
+    return poly(-one, l2t, lg2, ln2) - l2t + lg2 - ln2
+end
+function poly_test3()
+    return poly(one, 1.5, lg2, 2) - lg2 - 3.5
+end
+
+function _poly(x, a0, a1, a2, a3)
+    return poly(x, a0, a1, a2, a3) + sumsqr(poly_test0(), poly_test1(), poly_test2(), poly_test3())
+end

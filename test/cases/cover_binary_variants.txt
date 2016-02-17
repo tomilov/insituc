@@ -1,0 +1,53 @@
+
+function cover_binary_literals()
+    local lhs = 0
+    local rhs = 0
+    local ii = lhs - rhs
+    local ll = 0 - 0
+    local li = 0 - rhs
+    local il = lhs - 0
+    local l_ = 0 - zero
+    local _l = zero - 0
+    local i_ = lhs - zero
+    local _i = zero - rhs
+    local __ = one + one
+    local xx = (lhs - rhs) - (lhs - rhs)
+    local xl = (lhs - rhs) - 0
+    local lx = 0 - (lhs - rhs)
+    local xi = (lhs - rhs) - rhs
+    local ix = lhs - (lhs - rhs)
+    local x_ = (lhs - rhs) - zero
+    local _x = zero - (lhs - rhs)
+    local lmll  = 0 - 0 * 0
+    local llml  = 0 * 0 - 0
+    local imii  = lhs - lhs * rhs
+    local iimi  = lhs * rhs - rhs
+    local llmll = 0 * 0 - 0 * 0
+    local lgg = 0 + 0 * 1 ^ 1
+    local lgl = 0 + 1 ^ 1 * 0
+    local lll = 1 ^ 1 * 0 + 0
+    local llg = 1 ^ 1 + 0 * 0
+    lhs = 1
+    rhs = 1
+    local igg = lhs + lhs * lhs ^ lhs
+    local igl = rhs + rhs ^ rhs * rhs
+    local ill = lhs ^ lhs * lhs + lhs
+    local ilg = rhs ^ rhs + rhs * rhs
+    return ((((lhs) 
+           - (xx)) 
+           - ((li) 
+           - (il))) 
+           - (((l_) 
+           - (_l)) 
+           - ((i_) 
+           - (_i))))
+           - __ - 
+           ((((xx) 
+           - (xl)) 
+           - ((lx) 
+           - (xi))) 
+           - (((ix) 
+           - (x_)) 
+           - ((_x) 
+           - (rhs)))) 
+end

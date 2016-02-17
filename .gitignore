@@ -1,0 +1,12 @@
+CMakeLists.txt.user
+CMakeFiles/
+CMakeCache.txt
+Makefile
+cmake_install.cmake
+insituc.cbp
+libinsitucd.a
+test_derivatord
+test_evaluatord
+test_metad
+test_parserd
+test_runtimed

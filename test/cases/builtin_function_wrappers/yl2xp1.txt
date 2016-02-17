@@ -1,0 +1,7 @@
+function yl2xp1_pack0()
+    return 0.25, 3.0
+end
+
+function _yl2xp1(x, y)
+    return yl2xp1(x, y) + sqr(yl2xp1(yl2xp1_pack0()) - 3 * log2(1.25))
+end

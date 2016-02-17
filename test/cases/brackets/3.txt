@@ -1,0 +1,21 @@
+function brackets3()
+    local result = -1
+    local a, b = 1, 2
+    begin
+        local a, b = 20, 30
+        begin
+            local a, b = 200, 300
+            begin
+                local a, b = 2000, 3000
+                begin
+                    local a, b = 20000, 30000
+                    begin
+                        local a, b = 200000, 300000
+                        result = abs(a - 200000) + abs(b - 300000)
+                    end 
+                end 
+            end 
+        end 
+    end 
+    return result
+end

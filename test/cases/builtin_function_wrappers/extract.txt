@@ -1,0 +1,4 @@
+function _frexp2(x, _e, _s)
+    local e, s = extract(x)
+    return abs(_e - e) + abs(_s - s)
+end

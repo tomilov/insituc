@@ -1,0 +1,10 @@
+function assign()
+    local a = 1
+    local b = 10
+    local c = 100
+    local d = 2314
+    local e = 1234
+    local f = 12344
+    f, e, d = a, b, c
+    return abs(f - a) + abs(b - e) + abs(d - c)
+end

@@ -1,0 +1,5 @@
+function unary_plus_minus()
+    local a = 1
+    local b = 2
+    return -a + +b
+end

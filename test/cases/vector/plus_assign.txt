@@ -1,0 +1,10 @@
+function plus_assign()
+    local a = 11
+    local b = 10
+    local c = 7
+    local d = -10
+    local e = 11
+    local f = 5
+    a, b, c += d, e, f
+    return abs(1 - a) + abs(21 - b) + abs(12 - c)
+end

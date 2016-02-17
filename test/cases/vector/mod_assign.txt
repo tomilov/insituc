@@ -1,0 +1,10 @@
+function mod_assign()
+    local a = 11
+    local b = 10
+    local c = 7
+    local d = 7
+    local e = 7
+    local f = 5
+    a, b, c %= d, e, f
+    return abs(4 - a) + abs(3 - b) + abs(2 - c)
+end

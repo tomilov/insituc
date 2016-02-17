@@ -1,0 +1,2 @@
+
+function _sumsqr(a, b, c) return sumsqr(a, b, c) end

@@ -1,0 +1,1 @@
+function _pow2(a) return pow2(a) end

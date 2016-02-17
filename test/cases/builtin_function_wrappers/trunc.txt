@@ -1,0 +1,1 @@
+function trunc_(a) return trunc(a) end

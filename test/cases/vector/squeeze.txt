@@ -1,0 +1,11 @@
+function asqueeze(x)
+    return x, 1, 2, 3
+end
+
+function bsqueeze(y, z, t, u, v, w)
+    return y + z - t + u - v + w
+end
+
+function squeeze()
+    return bsqueeze(asqueeze(1), 4, 1)
+end

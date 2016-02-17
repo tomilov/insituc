@@ -1,0 +1,11 @@
+function remainder_pack0()
+    return 11, 7
+end
+
+function remainder_pack1()
+    return 10, 7
+end
+
+function _remainder(a, b)
+    return remainder(a, b) + sumsqr(remainder(remainder_pack0()) + 3, remainder(remainder_pack1()) - 3)
+end

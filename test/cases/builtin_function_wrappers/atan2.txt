@@ -1,0 +1,2 @@
+function _atan2_pack0() return 1, 1 end
+function _atan2(a, b) return atan2(a, b) + sqr(atan2(_atan2_pack0()) - pi / 4) end

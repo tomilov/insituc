@@ -1,0 +1,15 @@
+function _pack()
+    return 2, 4, 8
+end
+
+function asumsqr()
+    return sumsqr(1, _pack(), 16) - 340 - 1
+end
+
+function bsumsqr()
+    return sumsqr(_pack()) - 84
+end
+
+function main()
+    return abs(asumsqr()) + abs(bsumsqr())
+end

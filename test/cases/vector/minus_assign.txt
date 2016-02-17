@@ -1,0 +1,10 @@
+function minus_assign()
+    local a = 1
+    local b = 10
+    local c = 100
+    local d = -9
+    local e = 5
+    local f = 1
+    a, b, c -= d, e, f
+    return abs(10 - a) + abs(b - 5) + abs(99 - c)
+end

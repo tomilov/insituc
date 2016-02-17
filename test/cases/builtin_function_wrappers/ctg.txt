@@ -1,0 +1,2 @@
+
+function _ctg(a) return ctg(a) end

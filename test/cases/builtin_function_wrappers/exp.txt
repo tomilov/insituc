@@ -1,0 +1,2 @@
+
+function _exp(a) return exp(a) end

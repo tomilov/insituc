@@ -1,0 +1,4 @@
+function _sincos(phi, _sin, _cos)
+    local s, c = sincos(phi)
+    return abs(s - _sin) + abs(c - _cos)
+end

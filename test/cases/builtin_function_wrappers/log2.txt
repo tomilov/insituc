@@ -1,0 +1,2 @@
+
+function _log2(a) return log2(a) end

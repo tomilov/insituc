@@ -1,0 +1,6 @@
+function _pow_pack0() return 2, 2 end
+function _pow_pack1() return 1, 2 end
+function _pow_pack2() return 4, 0.5 end
+function _pow_pack3() return 2, -1 end
+function _pow_pack4() return 2, 0 end
+function _pow(a, b) return pow(a, b) + sumsqr(pow(_pow_pack0()) - 4, pow(_pow_pack1()) - 1, pow(_pow_pack2()) - 2, pow(_pow_pack3()) - 0.5, pow(_pow_pack4()) - 1) end

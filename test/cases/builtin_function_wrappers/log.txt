@@ -1,0 +1,6 @@
+function _log_pack0() return 2, 2 end
+function _log_pack1() return 4, 2 end
+function _log_pack2() return 2, 0.5 end
+function _log_pack3() return 2, 4 end
+function _log_pack4() return 2, 1 end
+function _log(a, b) return log(a, b) + sumsqr(log(_log_pack0()) - 1, log(_log_pack1()) - 0.5, log(_log_pack2()) + 1, log(_log_pack3()) - 2, log(_log_pack4())) end

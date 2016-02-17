@@ -1,0 +1,3 @@
+function retliteral()
+    return 3.02
+end

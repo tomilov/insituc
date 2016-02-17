@@ -1,0 +1,15 @@
+function raise_assign()
+    local a = 1
+    local b = pi
+    local c = exp(1)
+    local d = 2
+    local e = 3
+
+    local f = 10
+    local g = 0.5
+    local h = -1
+    local i = 1
+    local j = 2
+    a, b, c, d, e ^= f, g, h, i, j
+    return abs(1 - a) + abs(sqrt(pi) - b) + abs(exp(-1) - c) + abs(2 - d) + abs(9 - e)
+end

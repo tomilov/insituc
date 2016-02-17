@@ -1,0 +1,1 @@
+function lg2_() return lg2 end

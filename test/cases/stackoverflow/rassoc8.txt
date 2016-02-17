@@ -1,0 +1,8 @@
+function o()
+    return one
+end
+
+function f()
+    return o() + (o() + (o() + (o() + (o() + (o() + (o() + (o() + (o() + (o() + (o() + (o() + (o() + (o() + (o() + (o() + (o() + (o() + (o() + (o() + (o() + (o() + (o() + (o() + o())))))))))))))))))))))))
+end
+

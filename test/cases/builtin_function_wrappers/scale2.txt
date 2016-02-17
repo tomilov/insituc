@@ -1,0 +1,11 @@
+function scale2_pack0()
+    return 3, 2
+end
+
+function scale2_pack1()
+    return 2, 3
+end
+
+function _scale2(x, y)
+    return scale2(x, y) + sumsqr(scale2(scale2_pack0()) - 12, scale2(scale2_pack1()) - 16)
+end

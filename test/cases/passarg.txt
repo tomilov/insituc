@@ -1,0 +1,3 @@
+function passarg(b)
+    return b
+end

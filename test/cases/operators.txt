@@ -1,0 +1,122 @@
+
+function assign(x, y)
+    local t = x
+    t = y
+    return t
+end
+
+function plus_assign(x, y)
+    local t = x
+    t += y
+    return t
+end
+
+function minus_assign(x, y)
+    local t = x
+    t -= y
+    return t
+end
+
+function times_assign(x, y)
+    local t = x
+    t *= y
+    return t
+end
+
+function divide_assign(x, y)
+    local t = x
+    t /= y
+    return t
+end
+
+function mod_assign(x, y)
+    local t = x
+    t %= y
+    return t
+end
+
+function raise_assign(x, y)
+    local t = x
+    t ^= y
+    return t
+end
+
+function assign_ops()
+    local a = assign       (1, 11) // 11
+    local b = plus_assign  (a, 3)  // 14
+    local c = minus_assign (b, 9)  // 5
+    local d = times_assign (c, 4)  // 20
+    local e = divide_assign(d, 10) // 2
+    local f = raise_assign (e, 3)  // 8
+    local g = mod_assign   (f, 5)  // 3
+    return g
+end
+
+function plus  (x, y) return x + y end
+function minus (x, y) return x - y end
+function times (x, y) return x * y end
+function divide(x, y) return x / y end
+function mod   (x, y) return x % y end
+function raise (x, y) return x ^ y end
+
+function binary_ops()
+    local a = plus  (11, 3) // 14
+    local b = minus (a, 9)  // 5
+    local c = times (b, 4)  // 20
+    local d = divide(c, 10) // 2
+    local e = raise (d, 3)  // 8
+    local f = mod   (e, 5)  // 3
+    return f
+end
+
+function unary_ops()
+    local i = -1
+    local j = +i
+    local k = -j
+    return k
+end
+
+function pack3()
+    return 1, 2, 3
+end
+
+function pack2()
+    return 1, 2
+end
+
+function drop()
+    _ = 4
+    local _ = 3
+    return 0
+end
+
+function drop_alloca()
+    local a, _, c = pack3()
+    local _, b, z = pack3()
+    local x, y, _ = pack3()
+    local u, _, w = pack2(), 3
+    local _, v, t = pack2(), 3
+    local m, n, _ = pack2(), 3 
+    return sumsqr(a - 1, b - 2, c - 3,
+                  x - 1, y - 2, z - 3,
+                  u - 1, v - 2, w - 3,
+                  m - 1, n - 2, t - 3)
+end
+
+function drop_assign()
+    local a, b, c = -100, -1000, -10000
+    local x, y, z = -100000, -1000000, -10000000
+    local s, t = 100000, 1000000
+    a, _, c = pack3()
+    _, b, z = pack3()
+    x, y, _ = pack3()
+    s, _ = pack2()
+    _, t = pack2()
+    return sumsqr(a - 1, b - 2, c - 3,
+                  x - 1, y - 2, z - 3,
+                  s - 1, t - 2)
+end
+
+function main()
+    return assign_ops() + binary_ops() + unary_ops() + drop_alloca() + drop_assign() + drop() // 7
+end

@@ -1,0 +1,11 @@
+function amin()
+    return 3, 2
+end
+
+function bmin()
+    return min(one, amin(), pi) - one
+end
+
+function _min()
+    return abs(bmin()) + abs(min(amin()) - 2)
+end

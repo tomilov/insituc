@@ -1,0 +1,3 @@
+function _pow2m1(x)
+    return pow2m1(x)
+end

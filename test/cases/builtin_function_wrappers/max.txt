@@ -1,0 +1,2 @@
+
+function _max(a, b, c, d) return max(a, b, c, d) end

@@ -1,0 +1,8 @@
+function a()
+    return 3, 4
+end
+
+function declare1()
+    local x, y, z, t = 1, 2, a()
+    return abs(x - 1) + abs(y - 2) + abs(z - 3) + abs(t - 4)
+end

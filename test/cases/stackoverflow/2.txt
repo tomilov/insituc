@@ -1,0 +1,17 @@
+function rassoc()
+    return 1 + (1 + (1 + (1 + (1 + (1 + (1 + (1 + (1 + (1 + (1 + (1 + (1 + (1 + (1 + (1 + 1)))))))))))))))
+end
+
+function lassoc()
+    local a = 0
+    local b = 2
+    local c = l2e
+    local d = 333.0
+    local f = lg2
+    return (((((((((((((((1 + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1) + 1
+end
+
+function deepassoc()
+    return rassoc() + (lassoc() + (rassoc() + (lassoc() + (rassoc() + (lassoc() + (rassoc() + (lassoc() + (rassoc() + (lassoc() + rassoc())))))))))
+    + ((((((((((lassoc() + rassoc()) + lassoc()) + rassoc()) + lassoc()) + rassoc()) + lassoc()) + rassoc()) + lassoc()) + rassoc()) + lassoc()) + rassoc()
+end

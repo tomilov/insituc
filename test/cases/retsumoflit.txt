@@ -1,0 +1,3 @@
+function retsumoflit() /**/
+    return 6.7 + 0.078 /* comment /* /*** /** *///
+end //

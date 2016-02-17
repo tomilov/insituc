@@ -1,0 +1,11 @@
+function amax()
+    return 2, 3
+end
+
+function bmax()
+    return max(one, amax(), pi) - pi
+end
+
+function _max()
+    return abs(bmax()) + abs(max(amax()) - 3)
+end

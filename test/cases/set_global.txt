@@ -1,0 +1,4 @@
+function main()
+	g = 1000
+	return zero
+end

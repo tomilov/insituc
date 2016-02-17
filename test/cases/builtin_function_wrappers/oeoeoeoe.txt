@@ -1,0 +1,7 @@
+function op_expr(x, y)
+    return (((((x))))), ((y))
+end
+
+function caller()
+    return(((sumsqr((((op_expr(((((((4)))))), (((((3)))))))))) - sqr(5))))
+end

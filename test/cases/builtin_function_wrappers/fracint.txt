@@ -1,0 +1,4 @@
+function fracint_(x, integral_part, fractional_part)
+    local f, i = fracint(x)
+    return sumsqr(i - integral_part, f - fractional_part)
+end

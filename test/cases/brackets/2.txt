@@ -1,0 +1,25 @@
+function brackets2()
+    local a, b = 1, 2
+    begin
+        local a, b = 20, 30
+        begin
+            local a, b = 200, 300
+            begin
+                local a, b = 2000, 3000
+                begin
+                    local a, b = 20000, 30000
+                    begin
+                        local a, b = 200000, 300000
+                        a = b
+                    end
+                    a = b
+                end
+                a = b
+            end
+            a = b
+        end
+        a = b
+    end
+    a = b
+    return abs(a - 2) + abs(b - 2)
+end

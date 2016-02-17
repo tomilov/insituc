@@ -1,0 +1,11 @@
+function d()
+    return 1, 2, 3
+end
+
+function assign1()
+    local a = 10
+    local b = 20
+    local c = 30
+    a, b, c = d()
+    return abs(1 - a) + abs(b - 2) + abs(3 - c)
+end
